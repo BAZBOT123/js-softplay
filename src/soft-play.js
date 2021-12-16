@@ -13,28 +13,31 @@ let children = 0
 function enter (numChildren, numAdults) {
   adults += numAdults
   children += numChildren
+  if (numChildren > numAdults) {
+  return false }
   return true
 }
 
 function leave (numChildren, numAdults) {
   adults -= numAdults
   children -= numChildren
-  return true
-}
-
-function leave (numChildren, numAdults) {
-  adults == numAdults
-  children -= numChildren
+  if (children -= numChildren && adults == numAdults) {
+  return true}
   return false
 }
 
+//function leave (numChildren, numAdults) {
+ // adults -= numAdults
+ // children += numChildren
+  //return false
+//}
 
-function occupancy (numChildren, numAdults) {
-  adults -= numAdults
-  children -= numChildren
-  return true
+function occupancy() {
+  return {
+    adults : adults,
+    children : children
+  }
 }
-
 
 
 
