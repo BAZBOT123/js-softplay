@@ -21,16 +21,10 @@ function enter (numChildren, numAdults) {
 function leave (numChildren, numAdults) {
   adults -= numAdults
   children -= numChildren
-  if (children -= numChildren && adults == numAdults) {
-  return true}
+  if (children -= numChildren && adults === numAdults) {
+  return true }
   return false
 }
-
-//function leave (numChildren, numAdults) {
- // adults -= numAdults
- // children += numChildren
-  //return false
-//}
 
 function occupancy() {
   return {
@@ -39,7 +33,11 @@ function occupancy() {
   }
 }
 
-
+//function leave (numChildren, numAdults) {
+ // adults -= numAdults
+ // children += numChildren
+  //return false
+//}
 
 // TODO: Change the undefined values below to the name of your functions
 module.exports = {
