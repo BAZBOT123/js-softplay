@@ -10,19 +10,30 @@ let children = 0
 
 // TODO: Write your functions in the below section. Your functions should update
 // the adults and children variables defined above.
-//
 function enter (numChildren, numAdults) {
   adults += numAdults
   children += numChildren
   return true
 }
+
 function leave (numChildren, numAdults) {
-  adults += numAdults
+  adults -= numAdults
+  children -= numChildren
+  return true
+}
+
+function leave (numChildren, numAdults) {
+  adults == numAdults
   children -= numChildren
   return false
 }
 
 
+function occupancy (numChildren, numAdults) {
+  adults -= numAdults
+  children -= numChildren
+  return true
+}
 
 
 
@@ -31,6 +42,6 @@ function leave (numChildren, numAdults) {
 module.exports = {
   enter: enter,
   leave: leave,
-  occupancy: undefined,
+  occupancy: occupancy,
   reset: reset
 }
